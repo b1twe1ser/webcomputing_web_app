@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href=style.css>
+
+    <title>Spellinator</title>
+</head>
+<body>
+
+
+    <div class="container">
+      <h1 class="head_line" style="font-family: 'Roboto', sans-serif; font-weight: bold; text-align: center;">Spellinator</h1>
+    </div>
+    <div class="main_content" style="margin: auto; width: 60%; font-weight: bold;">
+        <form action="check_spelling">
+            <label for="language" style="font-weight: bold;
+            color: #558b6e; text-align: center; font-family: 'Roboto', sans-serif;">What language do you wish to check</label>
+            <select id="language" name="language" class="lang">
+                <option value="en">english</option>
+                <option value="ger">german</option>
+            </select><br>
+            <label for="allow_emojis" style="font-weight: bold; text-align: center; font-family: 'Roboto', sans-serif;">Allow emojis ?</label>
+            <select id="allow_emojis" name="allow_emojis" class="emojis">
+                <option value="1">Yes please, I love UTF-8 !</option>
+                <option value="0">No thank you, I like ASCII</option>
+            </select><br>
+            <label for="input" style="font-family: 'Roboto', sans-serif; font-weight: bold; text-align: center;">Please enter the text to check</label>
+            <input type="text" id="input" name="input" style="width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            color: #558b6e;
+            border-color: #558b6e;
+            font-weight: bold;
+            box-sizing: border-box;
+            border-radius: 10px;" value=""><br>
+            <input type="submit" value="check spelling" class="submit_button" style="font-weight: bold; color: #ffffff; background-color: #558b6e; border-radius: 5px; height: 2rem; width: 5rem; margin: 20px; border: none;">
+        </form>
+    </div>
+</body>
+</html>
